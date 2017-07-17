@@ -14,6 +14,23 @@ var Multiplier =  {
 	}
 }
 
+//Question 1 refactor as class...
+
+class Multiplier {
+	constructor(currentValue) {
+		this.currentValue = 1; 
+	}
+	
+	multiply(num, currentValue) {
+		this.currentValue = this.currentValue * num;
+		return currentValue;
+	}
+	
+	getCurrentValue(currentValue) {
+		return console.log(this.currentValue);
+	}
+}
+
 //Question 2
 
 function Album() {
